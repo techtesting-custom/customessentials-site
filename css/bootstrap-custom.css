@@ -138,9 +138,21 @@ body {
     color: var(--text-light) !important;
 }
 
-.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link {
+    color: var(--text-light) !important;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+}
+
+.navbar-nav .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
 .navbar-nav .nav-link.active {
-    color: var(--custom-orange) !important;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--custom-blue) !important;
+    font-weight: 600;
 }
 
 /* --- Hero Section --- */

@@ -2,199 +2,182 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>3D Printers | Custom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Printers | Custom Essentials</title>
+    <meta name="description" content="Discover our professional Bambu Labs 3D printers - A1 Mini and P1S. High-quality prints with advanced features and extensive material compatibility.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    <meta name="theme-color" content="#4da3ff">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap-custom.css">
     <style>
-        .printer-hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/printer-bg.jpg');
+        body { font-family: 'Poppins', sans-serif; }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('../images/a1mini.png');
             background-size: cover;
             background-position: center;
             color: white;
-            padding: 4rem 2rem;
+            padding: 6rem 0;
             text-align: center;
-            margin-top: 60px;
+            margin-top: 76px;
         }
-
-        .printer-specs-section {
-            padding: 4rem 0;
-            background: #f8f9fa;
-        }
-
+        
         .printer-card {
-            background: white;
+            border: none;
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
             overflow: hidden;
             transition: transform 0.3s ease;
         }
-
+        
         .printer-card:hover {
             transform: translateY(-5px);
         }
-
+        
         .printer-image {
             width: 100%;
             height: 300px;
             overflow: hidden;
             position: relative;
         }
-
+        
         .printer-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.3s ease;
         }
-
-        .printer-content {
-            padding: 2rem;
+        
+        .printer-card:hover .printer-image img {
+            transform: scale(1.05);
         }
-
-        .printer-content h2 {
-            color: #007bff;
-            margin-bottom: 1.5rem;
-        }
-
+        
         .specs-list {
             list-style: none;
             padding: 0;
         }
-
+        
         .specs-list li {
             padding: 0.75rem 0;
             border-bottom: 1px solid #eee;
-            display: flex;
-            align-items: center;
         }
-
+        
         .specs-list li:last-child {
             border-bottom: none;
         }
-
+        
         .feature-badge {
             display: inline-block;
             padding: 0.35rem 0.75rem;
             background: #e9f5ff;
-            color: #007bff;
+            color: var(--custom-blue, #4da3ff);
             border-radius: 20px;
             font-size: 0.9rem;
             margin: 0.25rem;
         }
-
-        .features-container {
-            margin-top: 1rem;
-        }
-
-        .quality-section {
-            background: white;
-            padding: 4rem 0;
-            text-align: center;
-        }
-
-        .quality-section h2 {
-            color: #007bff;
-            margin-bottom: 2rem;
-        }
-
-        .quality-text {
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.8;
+        
+        .shipping-banner {
+            background: #3399ff;
+            color: #fff;
+            font-weight: 600;
+            padding: 6px 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <nav>
-                        <a class="navbar-brand" href="/">
-                <img src="/images/main_logo.png" alt="Custom Essentials" height="40" class="me-2">
-                <span class="logo-text">Custom Essentials</span>
-            </a>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/promo/">Promo Codes</a></li>
-                <li><a href="/#services">Services</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center text-white" href="/">
+                    <img src="/images/main_logo.png" alt="Custom Essentials Logo" height="40" class="me-2">
+                    <span class="logo-text fw-bold">Custom Essentials</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/3dprinting/">3D Printing</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/printers/">Our Printers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/filament/">Filament Stock</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/promo/">Promo Codes</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-2" href="https://store.customessentials.co.uk">Shop Now</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="printer-hero">
+        <section class="hero-section">
             <div class="container">
                 <h1>Our Professional 3D Printers</h1>
                 <p class="lead">High-precision manufacturing equipment for your custom projects</p>
+                <div class="d-flex gap-3 justify-content-center mt-4">
+                    <a href="https://store.customessentials.co.uk" class="btn btn-light btn-lg">Start Your Project</a>
+                    <a href="/3dprinting" class="btn btn-outline-light btn-lg">Learn More</a>
+                </div>
             </div>
         </section>
 
-        <section class="printer-specs-section">
+        <section class="content-section py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="printer-card">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="printer-card card h-100">
                             <div class="printer-image">
-                                <img src="../images/bambu-a1-mini.jpg" alt="Bambu Labs A1 Mini">
+                                                                <img src="../images/a1mini.png" alt="Bambu Labs A1 Mini" class="card-img-top">
                             </div>
-                            <div class="printer-content">
+                            <div class="card-body">
                                 <h2>Bambu Labs A1 Mini</h2>
                                 <ul class="specs-list">
                                     <li><strong>Build Volume:</strong> 180 x 180 x 180 mm³</li>
                                     <li><strong>Print Speed:</strong> Up to 500 mm/s</li>
                                     <li><strong>Hot End:</strong> All-Metal, up to 300°C</li>
-                                    <li><strong>Nozzle:</strong> 0.4mm (0.2, 0.6, 0.8mm optional)</li>
                                     <li><strong>Build Plate:</strong> Max 80°C, PEI Plate</li>
                                     <li><strong>Materials:</strong> PLA, PETG, TPU, PVA</li>
-                                    <li><strong>Dimensions:</strong> 347 x 315 x 365 mm³</li>
-                                    <li><strong>Weight:</strong> 5.5 kg</li>
                                 </ul>
-                                <div class="features-container">
+                                <div class="features-container mt-4">
                                     <span class="feature-badge">High-speed printing</span>
                                     <span class="feature-badge">Filament Monitoring</span>
                                     <span class="feature-badge">Touch Screen</span>
                                     <span class="feature-badge">WiFi Connected</span>
                                     <span class="feature-badge">Camera Monitoring</span>
-                                    <span class="feature-badge">Power Loss Recovery</span>
-                                </div>
-                                <div class="mt-3">
-                                    <small class="text-muted">
-                                        Advanced features include closed-loop cooling control, filament runout detection, 
-                                        tangle prevention, and compatibility with Bambu Studio software.
-                                    </small>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="col-md-6">
-                        <div class="printer-card">
+                    <div class="col-lg-6">
+                        <div class="printer-card card h-100">
                             <div class="printer-image">
-                                <img src="../images/bambu-p1s.jpg" alt="Bambu Labs P1S">
+                                                                <img src="../images/p1s image.jpg" alt="Bambu Labs P1S" class="card-img-top">
                             </div>
-                            <div class="printer-content">
+                            <div class="card-body">
                                 <h2>Bambu Labs P1S</h2>
                                 <ul class="specs-list">
                                     <li><strong>Build Volume:</strong> 256 x 256 x 256 mm³</li>
-                                    <li><strong>Materials:</strong> PLA, PETG, TPU, ABS, ASA, PVA, PET, PA, PC</li>
-                                    <li><strong>Technology:</strong> Fused Filament Fabrication (FFF)</li>
-                                    <li><strong>Dimensions:</strong> 389 x 389 x 458 mm³</li>
-                                    <li><strong>Weight:</strong> 12.95 kg</li>
-                                    <li><strong>Type:</strong> Desktop</li>
-                                    <li><strong>Connectivity:</strong> Wi-Fi, Bambu-Bus</li>
+                                    <li><strong>Print Speed:</strong> Up to 500 mm/s</li>
+                                    <li><strong>Hot End:</strong> High-flow, up to 300°C</li>
+                                    <li><strong>Chamber:</strong> Actively Heated & Enclosed</li>
+                                    <li><strong>Materials:</strong> PLA, PETG, TPU, ABS, ASA, PA, PC</li>
                                 </ul>
-                                <div class="features-container">
+                                <div class="features-container mt-4">
                                     <span class="feature-badge">AMS Support</span>
                                     <span class="feature-badge">Enclosed Chamber</span>
                                     <span class="feature-badge">Remote Printing</span>
                                     <span class="feature-badge">Advanced Materials</span>
                                     <span class="feature-badge">High Temperature</span>
                                 </div>
-                                <div class="mt-3">
-                                    <small class="text-muted">
-                                        Professional-grade printer with extensive material compatibility and 
-                                        advanced features for demanding applications.
-                                    </small>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -202,34 +185,66 @@
             </div>
         </section>
 
-        <section class="quality-section">
+        <section class="content-section bg-light py-5">
             <div class="container">
-                <h2>Quality Assurance</h2>
-                <p class="quality-text">
-                    Our printers undergo regular maintenance and calibration to ensure consistent, professional results. 
-                    Every print is checked for quality before delivery, and we maintain strict material handling procedures 
-                    to guarantee the best possible output for your projects.
-                </p>
-                <div class="mt-4">
-                    <a href="mailto:prototyping@custom.co.uk" class="cta-button">Request a Quote</a>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mb-4">Quality Assurance</h2>
+                        <p class="lead">
+                            Our printers undergo regular maintenance and calibration to ensure consistent, professional results.
+                            Every print is checked for quality before delivery, and we maintain strict material handling procedures.
+                        </p>
+                        <div class="mt-4">
+                            <a href="mailto:support@customessentials.co.uk" class="btn btn-primary btn-lg">Request a Quote</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <div class="social-links">
-                    <a href="#" class="social-link">YouTube</a>
-                    <a href="#" class="social-link">Our Founder's YouTube</a>
-                    <a href="#" class="social-link">Instagram</a>
+    <footer class="footer bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-md-3">
+                    <h5>Custom Essentials</h5>
+                    <p>Owned by techtesting.tech<br>
+                        Contact: <a href="mailto:support@customessentials.co.uk" class="text-white">support@customessentials.co.uk</a>
+                    </p>
+                </div>
+
+                <!-- Shop -->
+                <div class="col-md-3 text-md-center">
+                    <h5>Shop</h5>
+                    <p><a href="https://store.customessentials.co.uk" class="text-white">Visit Our Store</a></p>
+                </div>
+
+                <!-- Partnership -->
+                <div class="col-md-3 text-md-center">
+                    <h5>Partnership</h5>
+                    <p>In partnership with<br>
+                        <a href="https://www.tanda-3dprinting.co.uk/" target="_blank" class="text-white">Tanda 3D Printing</a>
+                    </p>
+                </div>
+
+                <!-- Follow Us -->
+                <div class="col-md-3 text-md-end">
+                    <h5>Follow Us</h5>
+                    <p>
+                        <a href="https://www.youtube.com/@customessentialsuk" target="_blank" class="text-white">Custom Essentials YouTube</a><br>
+                        <a href="https://www.youtube.com/@pcandtechnerd" target="_blank" class="text-white">Founder's YouTube</a>
+                    </p>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Custom. All rights reserved.</p>
+
+            <hr class="my-4">
+
+            <div class="row">
+                <div class="col text-center">
+                    <p class="mb-0">&copy; 2025 Custom Essentials. All rights reserved.</p>
+                </div>
+            </div>
         </div>
     </footer>
 

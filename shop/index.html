@@ -18,52 +18,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/bootstrap-custom.css">
-
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-    }
-    .navbar {
-      background-color: #4da3ff !important;
-    }
-    .navbar .nav-link {
-      color: #fff !important;
-      font-weight: 500;
-    }
-    .navbar .nav-link.active {
-      background: rgba(255, 255, 255, 0.25);
-      border-radius: 6px;
-      color: #fff !important;
-    }
-    .shipping-banner {
-      background: #3399ff;
-      color: #fff;
-      font-weight: 600;
-      padding: 6px 0;
-    }
-    main {
-      margin-top: 110px;
-      margin-bottom: 60px;
-    }
-    footer {
-      border-top: 3px solid #ddd;
-    }
-  </style>
 </head>
 <body>
-  <!-- Unified Header -->
-  <header class="fixed-top">
-    <!-- Shipping Banner -->
-    <div class="shipping-banner text-center">
-      🇬🇧 UK Shipping Only
-    </div>
+  <div class="alert alert-info text-center py-2 m-0" style="background: var(--custom-light-blue); border: none;">
+    🇬🇧 UK Shipping Only
+  </div>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color:#4da3ff;">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center text-white" href="/">
+        <a class="navbar-brand" href="/">
           <img src="../images/main_logo.png" alt="Custom Essentials Logo" height="40" class="me-2">
-          <span class="logo-text fw-bold">Custom Essentials</span>
+          <span class="logo-text">Custom Essentials</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -91,7 +58,7 @@
       </div>
     </section>
 
-    <section class="content-section bg-light" style="margin-top: -100px; padding-top: 150px; border-bottom: 3px solid #ddd;">
+    <section class="content-section bg-light" style="margin-top: -100px; padding-top: 150px;">
       <div class="container">
         <div class="row justify-content-center g-4">
 
@@ -106,8 +73,9 @@
                   <li>Complete service catalog</li>
                   <li>Secure checkout</li>
                   <li>Custom orders</li>
+                  <li>Business accounts</li>
                 </ul>
-                <a href="http://store.customessentials.co.uk/" class="btn btn-primary btn-lg" target="_blank">Visit Shopify Store</a>
+                <a href="https://custom.myshopify.com" class="btn btn-primary btn-lg" target="_blank">Visit Shopify Store</a>
               </div>
             </div>
           </div>
@@ -119,9 +87,8 @@
                 <img src="../images/etsy_logo.png" alt="Etsy Shop" class="mb-4" style="height: 60px;">
                 <h3>Etsy Shop</h3>
                 <p class="mb-4">Browse our collection of ready-to-ship items and custom designs.</p>
-                <ul class="specs-list text-start mb-4">
-                  <li>Unique designs</li>
-                  <li>Ready-to-ship items</li>
+    mb-4">
+                  <li>Unique designs</lihttp://store.customessentials.co.uk/"-to-ship items</li>
                   <li>Custom variations</li>
                   <li>Direct messaging</li>
                 </ul>
