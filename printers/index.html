@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3D Printers | Custom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .printer-hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/printer-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .printer-specs-section {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+
+        .printer-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .printer-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .printer-image {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .printer-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .printer-content {
+            padding: 2rem;
+        }
+
+        .printer-content h2 {
+            color: #007bff;
+            margin-bottom: 1.5rem;
+        }
+
+        .specs-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .specs-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+
+        .specs-list li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-badge {
+            display: inline-block;
+            padding: 0.35rem 0.75rem;
+            background: #e9f5ff;
+            color: #007bff;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 0.25rem;
+        }
+
+        .features-container {
+            margin-top: 1rem;
+        }
+
+        .quality-section {
+            background: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .quality-section h2 {
+            color: #007bff;
+            margin-bottom: 2rem;
+        }
+
+        .quality-text {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+                        <a class="navbar-brand" href="/">
+                <img src="/images/main_logo.png" alt="Custom Essentials" height="40" class="me-2">
+                <span class="logo-text">Custom Essentials</span>
+            </a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/promo/">Promo Codes</a></li>
+                <li><a href="/#services">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="printer-hero">
+            <div class="container">
+                <h1>Our Professional 3D Printers</h1>
+                <p class="lead">High-precision manufacturing equipment for your custom projects</p>
+            </div>
+        </section>
+
+        <section class="printer-specs-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="printer-card">
+                            <div class="printer-image">
+                                <img src="../images/bambu-a1-mini.jpg" alt="Bambu Labs A1 Mini">
+                            </div>
+                            <div class="printer-content">
+                                <h2>Bambu Labs A1 Mini</h2>
+                                <ul class="specs-list">
+                                    <li><strong>Build Volume:</strong> 180 x 180 x 180 mm³</li>
+                                    <li><strong>Print Speed:</strong> Up to 500 mm/s</li>
+                                    <li><strong>Hot End:</strong> All-Metal, up to 300°C</li>
+                                    <li><strong>Nozzle:</strong> 0.4mm (0.2, 0.6, 0.8mm optional)</li>
+                                    <li><strong>Build Plate:</strong> Max 80°C, PEI Plate</li>
+                                    <li><strong>Materials:</strong> PLA, PETG, TPU, PVA</li>
+                                    <li><strong>Dimensions:</strong> 347 x 315 x 365 mm³</li>
+                                    <li><strong>Weight:</strong> 5.5 kg</li>
+                                </ul>
+                                <div class="features-container">
+                                    <span class="feature-badge">High-speed printing</span>
+                                    <span class="feature-badge">Filament Monitoring</span>
+                                    <span class="feature-badge">Touch Screen</span>
+                                    <span class="feature-badge">WiFi Connected</span>
+                                    <span class="feature-badge">Camera Monitoring</span>
+                                    <span class="feature-badge">Power Loss Recovery</span>
+                                </div>
+                                <div class="mt-3">
+                                    <small class="text-muted">
+                                        Advanced features include closed-loop cooling control, filament runout detection, 
+                                        tangle prevention, and compatibility with Bambu Studio software.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="printer-card">
+                            <div class="printer-image">
+                                <img src="../images/bambu-p1s.jpg" alt="Bambu Labs P1S">
+                            </div>
+                            <div class="printer-content">
+                                <h2>Bambu Labs P1S</h2>
+                                <ul class="specs-list">
+                                    <li><strong>Build Volume:</strong> 256 x 256 x 256 mm³</li>
+                                    <li><strong>Materials:</strong> PLA, PETG, TPU, ABS, ASA, PVA, PET, PA, PC</li>
+                                    <li><strong>Technology:</strong> Fused Filament Fabrication (FFF)</li>
+                                    <li><strong>Dimensions:</strong> 389 x 389 x 458 mm³</li>
+                                    <li><strong>Weight:</strong> 12.95 kg</li>
+                                    <li><strong>Type:</strong> Desktop</li>
+                                    <li><strong>Connectivity:</strong> Wi-Fi, Bambu-Bus</li>
+                                </ul>
+                                <div class="features-container">
+                                    <span class="feature-badge">AMS Support</span>
+                                    <span class="feature-badge">Enclosed Chamber</span>
+                                    <span class="feature-badge">Remote Printing</span>
+                                    <span class="feature-badge">Advanced Materials</span>
+                                    <span class="feature-badge">High Temperature</span>
+                                </div>
+                                <div class="mt-3">
+                                    <small class="text-muted">
+                                        Professional-grade printer with extensive material compatibility and 
+                                        advanced features for demanding applications.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quality-section">
+            <div class="container">
+                <h2>Quality Assurance</h2>
+                <p class="quality-text">
+                    Our printers undergo regular maintenance and calibration to ensure consistent, professional results. 
+                    Every print is checked for quality before delivery, and we maintain strict material handling procedures 
+                    to guarantee the best possible output for your projects.
+                </p>
+                <div class="mt-4">
+                    <a href="mailto:prototyping@custom.co.uk" class="cta-button">Request a Quote</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">YouTube</a>
+                    <a href="#" class="social-link">Our Founder's YouTube</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Custom. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
