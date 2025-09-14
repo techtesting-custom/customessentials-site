@@ -27,7 +27,6 @@
             color: white;
             padding: 6rem 0;
             text-align: center;
-            margin-top: 76px;
         }
         
         .printer-card {
@@ -94,7 +93,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-fixed-top fixed-top">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center text-white" href="/">
                     <img src="/images/main_logo.png" alt="Custom Essentials Logo" height="40" class="me-2">
@@ -110,20 +109,23 @@
                         <li class="nav-item"><a class="nav-link active" href="/printers/">Our Printers</a></li>
                         <li class="nav-item"><a class="nav-link" href="/filament/">Filament Stock</a></li>
                         <li class="nav-item"><a class="nav-link" href="/promo/">Promo Codes</a></li>
-                        <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-2" href="https://store.customessentials.co.uk">Shop Now</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-2" href="/shop">Shop Now</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main style="margin-top: 76px;">
         <section class="hero-section">
-            <div class="container">
+            <div class="container text-center text-white">
                 <h1>Our Professional 3D Printers</h1>
                 <p class="lead">High-precision manufacturing equipment for your custom projects</p>
+                <div class="alert alert-info mt-4">
+                    <p class="mb-0">Our printers are connected through a secure network, allowing us to provide service from multiple locations. While we may not have physical access to all printers, our network setup ensures efficient monitoring and management of your prints.</p>
+                </div>
                 <div class="d-flex gap-3 justify-content-center mt-4">
-                    <a href="https://store.customessentials.co.uk" class="btn btn-light btn-lg">Start Your Project</a>
+                    <a href="/shop" class="btn btn-light btn-lg">Start Your Project</a>
                     <a href="/3dprinting" class="btn btn-outline-light btn-lg">Learn More</a>
                 </div>
             </div>
@@ -181,6 +183,32 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-lg-6">
+                        <div class="printer-card card h-100">
+                            <div class="printer-image">
+                                                                <img src="../images/flashforgead4.jpg" alt="Flashforge Adventurer 4" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <h2>Flashforge Adventurer 4</h2>
+                                <ul class="specs-list">
+                                    <li><strong>Machine Size:</strong> 15.3 x 13.4 x 15.9 inches (38.8cm x 34.0cm x 40.5cm)</li>
+                                    <li><strong>Build Volume:</strong> 9.7 x 7.9 x 9.8 inches (220mm x 200mm x 250mm)</li>
+                                    <li><strong>Material:</strong> 1.75mm PLA, PLA+, ABS</li>
+                                    <li><strong>Nozzle:</strong> .4mm (.3mm and .6mm optional)</li>
+                                    <li><strong>Build Platform:</strong> Heated Removable Flexible Platform</li>
+                                    <li><strong>Connectivity:</strong> USB, Wi-Fi, Ethernet</li>
+                                    <li><strong>Interface:</strong> 4.3-inch Touchscreen LCD</li>
+                                </ul>
+                                <div class="features-container mt-4">
+                                    <span class="feature-badge">Flexible Build Platform</span>
+                                    <span class="feature-badge">Multiple Connectivity Options</span>
+                                    <span class="feature-badge">Touch Interface</span>
+                                    <span class="feature-badge">Multiple Nozzle Options</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -217,7 +245,7 @@
                 <!-- Shop -->
                 <div class="col-md-3 text-md-center">
                     <h5>Shop</h5>
-                    <p><a href="https://store.customessentials.co.uk" class="text-white">Visit Our Store</a></p>
+                    <p><a href="/shop" class="text-white">Visit Our Store</a></p>
                 </div>
 
                 <!-- Partnership -->

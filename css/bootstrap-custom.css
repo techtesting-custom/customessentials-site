@@ -1,15 +1,5 @@
 /* Custom Bootstrap Overrides and Extensions */
 
-/* Page Transitions */
-.page-transition {
-    opacity: 1;
-    transition: opacity 0.3s ease;
-}
-
-.page-exit {
-    opacity: 0;
-}
-
 /* Ripple Effect */
 .ripple {
     position: absolute;
@@ -36,6 +26,16 @@
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Animations */
+.animate-hover {
+    transition: all 0.3s ease;
+}
+
+.animate-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* Navigation Hover Effects */
@@ -91,11 +91,11 @@
 
 /* Theme Colors */
 :root {
-    --custom-blue: #0088ff;
-    --custom-light-blue: #e6f3ff;
-    --custom-blue-dark: #004085;
-    --custom-blue-light: #3498db;
-    --custom-gradient: linear-gradient(135deg, #e7f1ff 0%, #ffffff 100%);
+    --custom-blue: #4DA3FF;
+    --custom-light-blue: #E9F5FF;
+    --custom-blue-dark: #2980B9;
+    --custom-blue-light: #78C6FF;
+    --custom-gradient: linear-gradient(135deg, #E9F5FF 0%, #ffffff 100%);
     --text-light: #ffffff;
     --text-dark: #2c3e50;
     --bg-light: #f8f9fa;
@@ -106,9 +106,11 @@
 /* General Body */
 body {
     font-family: 'Poppins', sans-serif;
-    background: var(--custom-gradient);
+    background: var(--custom-blue);
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    overflow-y: scroll; /* Prevent layout shift */
 }
 
 /* --- Header & Shipping Bar --- */
@@ -123,19 +125,30 @@ body {
 }
 
 .navbar {
-    background: linear-gradient(90deg, var(--custom-blue) 0%, var(--custom-blue-light) 100%);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-    padding: 1.25rem 0;
-    position: fixed;
-    top: 40px; /* below shipping bar */
+    background: linear-gradient(90deg, #4DA3FF 0%, #78C6FF 50%, #8AD5FF 100%);
+    box-shadow: 0 8px 24px rgba(77, 163, 255, 0.12);
+    padding: 0.75rem 0;
+    position: absolute;
+    top: 0;
     width: 100%;
     z-index: 1040;
-    min-height: 80px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px);
 }
 
-.navbar-brand .logo,
-.navbar-nav .nav-link {
+.navbar.navbar-hidden {
+    transform: translateY(-100%);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
     color: var(--text-light) !important;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 0.5rem;
 }
 
 .navbar-nav .nav-link {
@@ -143,6 +156,7 @@ body {
     padding: 0.5rem 1rem;
     transition: all 0.3s ease;
     border-radius: 6px;
+    font-weight: 500;
 }
 
 .navbar-nav .nav-link:hover {
@@ -153,6 +167,24 @@ body {
     background: rgba(255, 255, 255, 0.9);
     color: var(--custom-blue) !important;
     font-weight: 600;
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 0.5rem 0;
+    }
+    
+    .navbar-collapse {
+        background: var(--custom-blue);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem;
+        margin: 0.25rem 0;
+    }
 }
 
 /* --- Hero Section --- */
@@ -179,14 +211,13 @@ body {
 
 /* --- Main Content --- */
 main {
-    margin-top: 120px; /* clear space under fixed header */
     margin-bottom: 60px; /* clear space above footer */
 }
 
 .content-section {
-    padding: 5rem 0;
+    padding: 4rem 0;
     background: linear-gradient(135deg, #f8fbff 0%, #ffffff 100%);
-    border-bottom: 3px solid #ddd;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 /* --- Cards --- */

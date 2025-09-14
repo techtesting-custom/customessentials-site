@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta n        <nav class="navbar navbar-expand-lg navbar-fixed-top fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                <img src="/images/main_logo.png" alt="Custom Essentials" height="40" class="me-2">"viewport" content="width=device-width, initial-scale=1.0">
     <title>Filament Stock | Custom Essentials</title>
     <meta name="description" content="Check our current filament stock and available materials for 3D printing.">
     
@@ -107,7 +110,7 @@
                             <a class="nav-link" href="/promo">Promo Codes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://custom.myshopify.com">Shop</a>
+                            <a class="nav-link btn btn-primary text-white ms-2" href="/shop">Shop Now</a>
                         </li>
                     </ul>
                 </div>
@@ -115,9 +118,9 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero-section" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/filament-bg.jpg');">
-            <div class="container">
+    <main style="margin-top: 76px;">
+        <section class="hero-section" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/filament-bg.jpg') center/cover;">
+            <div class="container text-center text-white">
                 <h1>Current Filament Stock</h1>
                 <p class="lead">Quality materials for your 3D printing needs</p>
             </div>
@@ -142,11 +145,15 @@
                                     <li><strong>Bed Temperature:</strong> 70-80°C</li>
                                 </ul>
                                 <div class="text-center mt-4">
-                                    <a href="https://custom.myshopify.com" class="btn btn-primary">Order Now</a>
+                                    <a href="/shop" class="btn btn-primary">Order Now</a>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="alert alert-info mt-4">
+                            <h4 class="alert-heading">Future Capabilities</h4>
+                            <p>While we have a Bambu Labs H2S printer capable of carbon fiber materials, we are currently not offering carbon fiber printing services. We are in the process of testing and optimizing our setup for these advanced materials and hope to offer this capability in the near future.</p>
+                        </div>
                         <div class="text-center mt-4">
                             <p class="text-muted">
                                 Need a specific material or color? Contact us at 
@@ -170,7 +177,7 @@
                 </div>
             </div>
             <div class="text-center mt-5">
-                <p>&copy; 2025 Custom. All rights reserved.</p>
+                <p>&copy; 2025 Custom Essentials. All rights reserved.</p>
             </div>
         </div>
     </footer>
