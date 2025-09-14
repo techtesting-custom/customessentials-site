@@ -1,21 +1,39 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "Custom Essentials 3D Printing",
+  "short_name": "Custom Essentials",
+  "description": "Professional 3D printing services in partnership with T&A 3D Printing",
   "icons": [
     {
-      "src": "/web-app-manifest-192x192.png",
+      "src": "/images/favicon/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     },
     {
-      "src": "/web-app-manifest-512x512.png",
+      "src": "/images/favicon/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     }
   ],
-  "theme_color": "#ffffff",
+  "start_url": "/",
+  "theme_color": "#4da3ff",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "en-GB",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "technology"],
+  "shortcuts": [
+    {
+      "name": "Start Order",
+      "url": "/shop",
+      "description": "Start a new 3D printing order"
+    },
+    {
+      "name": "View Filaments",
+      "url": "/filament",
+      "description": "Check our available filament stock"
+    }
+  ]
 }

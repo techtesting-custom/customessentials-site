@@ -49,10 +49,13 @@
         }
         
         .printer-image img {
-            width: 100%;
+            width: auto;
             height: 100%;
-            object-fit: cover;
+            max-width: 100%;
+            object-fit: contain;
             transition: transform 0.3s ease;
+            margin: 0 auto;
+            display: block;
         }
         
         .printer-card:hover .printer-image img {
@@ -122,7 +125,7 @@
                 <h1>Our Professional 3D Printers</h1>
                 <p class="lead">High-precision manufacturing equipment for your custom projects</p>
                 <div class="alert alert-info mt-4">
-                    <p class="mb-0">Our printers are connected through a secure network, allowing us to provide service from multiple locations. While we may not have physical access to all printers, our network setup ensures efficient monitoring and management of your prints.</p>
+                    <p class="mb-0">Our printers are connected through a secure network, allowing us to provide service from multiple locations. While we may not have physical access to all printers, our network setup ensures efficient monitoring and management of your prints. They are all in trusted locations and we have a very reliable system in place to decide if people can print.</p>
                 </div>
                 <div class="d-flex gap-3 justify-content-center mt-4">
                     <a href="/shop" class="btn btn-light btn-lg">Start Your Project</a>
@@ -179,6 +182,33 @@
                                     <span class="feature-badge">Remote Printing</span>
                                     <span class="feature-badge">Advanced Materials</span>
                                     <span class="feature-badge">High Temperature</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="printer-card card h-100">
+                            <div class="printer-image">
+                                <img src="../images/bambu_h2s.png" alt="Bambu Labs H2S" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <h2>Bambu Labs H2S</h2>
+                                <ul class="specs-list">
+                                    <li><strong>Build Volume:</strong> 340 x 320 x 340 mm³</li>
+                                    <li><strong>Print Speed:</strong> Up to 1000 mm/s</li>
+                                    <li><strong>Hot End:</strong> All Metal, up to 350°C</li>
+                                    <li><strong>Build Plate:</strong> Max 120°C, Textured/Smooth PEI</li>
+                                    <li><strong>Chamber Temperature:</strong> Up to 65°C</li>
+                                    <li><strong>Materials:</strong> PLA, PETG, TPU, ABS, ASA, PC, PA, PET, PPS, Carbon/Glass Fiber</li>
+                                </ul>
+                                <div class="features-container mt-4">
+                                    <span class="feature-badge">High-speed Printing</span>
+                                    <span class="feature-badge">Air Purification</span>
+                                    <span class="feature-badge">Active Chamber Heating</span>
+                                    <span class="feature-badge">Advanced Materials</span>
+                                    <span class="feature-badge">High Flow Option</span>
+                                    <span class="feature-badge">Multi-Material Ready</span>
                                 </div>
                             </div>
                         </div>
@@ -252,7 +282,7 @@
                 <div class="col-md-3 text-md-center">
                     <h5>Partnership</h5>
                     <p>In partnership with<br>
-                        <a href="https://www.tanda-3dprinting.co.uk/" target="_blank" class="text-white">Tanda 3D Printing</a>
+                        <a href="https://www.tanda-3dprinting.co.uk/" target="_blank" class="text-white">T&A 3D Printing</a>
                     </p>
                 </div>
 
