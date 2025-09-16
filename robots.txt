@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+Allow: /3dprinting/
+Allow: /printers/
+Allow: /filament/
+Allow: /shop/
+Allow: /promo/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Prevent access to potential sensitive areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /backup/
+Disallow: /dev/
+Disallow: /test/
+Disallow: /tmp/
+
+# Sitemaps
+Sitemap: https://customessentials.co.uk/sitemap.xml
+
+# Crawl-delay for heavy crawlers
+Crawl-delay: 10

@@ -4,18 +4,55 @@
     "description": "Professional 3D printing services in partnership with T&A 3D Printing",
     "icons": [
         {
-            "src": "/apple-touch-icon.png",
+            "src": "/images/favicon/apple-touch-icon.png",
             "sizes": "180x180",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any maskable"
         },
         {
-            "src": "/favicon-96x96.png",
+            "src": "/images/favicon/favicon-96x96.png",
             "sizes": "96x96",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/images/favicon/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/images/favicon/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png",
+            "purpose": "any"
         }
     ],
-    "theme_color": "#0056b3",
+    "theme_color": "#4da3ff",
     "background_color": "#ffffff",
     "display": "standalone",
-    "start_url": "/"
+    "start_url": "/",
+    "scope": "/",
+    "orientation": "any",
+    "categories": ["business", "shopping"],
+    "lang": "en-GB",
+    "dir": "ltr",
+    "prefer_related_applications": false,
+    "shortcuts": [
+        {
+            "name": "Shop Now",
+            "url": "/shop",
+            "description": "Start shopping for 3D printing services"
+        },
+        {
+            "name": "Our Printers",
+            "url": "/printers",
+            "description": "View our available 3D printers"
+        },
+        {
+            "name": "Filament Stock",
+            "url": "/filament",
+            "description": "Check our current filament stock"
+        }
+    ]
 }
